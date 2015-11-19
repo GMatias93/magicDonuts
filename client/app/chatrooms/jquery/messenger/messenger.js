@@ -2,7 +2,7 @@ angular.module("myApp.jqueryMessenger", [])
 
 .controller("JqueryMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/jquery");
+    var ref = new Firebase("https://gacc.firebaseapp.com/jquery");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

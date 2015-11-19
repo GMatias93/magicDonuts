@@ -2,7 +2,7 @@ angular.module("myApp.html5Messenger", [])
 
 .controller("Html5MsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/HTML5");
+    var ref = new Firebase("https://gacc.firebaseapp.com/HTML5");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

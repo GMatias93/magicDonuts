@@ -2,7 +2,7 @@ angular.module("myApp.nodeMessenger", [])
 
 .controller("NodeMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/node");
+    var ref = new Firebase("https://gacc.firebaseapp.com/node");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

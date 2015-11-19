@@ -2,7 +2,7 @@ angular.module("myApp.cssMessenger", [])
 
 .controller("CssMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/CSS");
+    var ref = new Firebase("https://gacc.firebaseapp.com/CSS");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

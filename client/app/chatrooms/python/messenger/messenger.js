@@ -2,7 +2,7 @@ angular.module("myApp.pythonMessenger", [])
 
 .controller("PythonMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/python");
+    var ref = new Firebase("https://gacc.firebaseapp.com/python");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

@@ -3,7 +3,7 @@ angular.module("myApp.services", [])
 
 
 .factory("Auth", function($firebaseAuth, $location) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com", "example3");
+    var ref = new Firebase("https://gacc.firebaseapp.com", "example3");
     //the following code redirects users to our homepage at login success.
  
     ref.authWithOAuthPopup('github', function () {
